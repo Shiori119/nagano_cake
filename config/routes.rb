@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :customers
   namespace :admin do
     resources :sessions, only: [:new, :create, :destroy]
     resources :items
